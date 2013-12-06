@@ -1,0 +1,9 @@
+if [ -f "$rvm_path/scripts/rvm" ]; then
+  source "$rvm_path/scripts/rvm"
+  rvm use `cat .ruby-version`'@'`cat .ruby-gemset`
+fi
+
+export POW_TIMEOUT=30000
+export POW_WORKERS=3
+
+export ENABLE_REMOTE_DEBUGGER_UNDER_POW=true
