@@ -18,7 +18,6 @@
             "test": ["rspec", "testrb"]
           },
           "test_console": ["tc"]
-
         }
       }
     }
