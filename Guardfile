@@ -4,7 +4,6 @@
 zeus = File.exists?('.zeus.sock')
 rspec_cmd = 'rspec'
 rspec_cmd = 'zeus ' + rspec_cmd if zeus
-puts rspec_cmd
 rspec_options = {
   cmd: rspec_cmd,
   run_all: {
